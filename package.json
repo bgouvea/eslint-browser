@@ -1,0 +1,25 @@
+{
+  "name": "eslint-browser",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "rollup": "^0.66.0",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-uglify": "^4.0.0",
+	"rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "serve": "^8.1.2"
+  },
+  "dependencies": {
+    "eslint4b": "^5.8.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel start watch",
+    "start": "serve public"
+  }
+}
